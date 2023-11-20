@@ -3,12 +3,13 @@ kind: Config
 metadata:
   name: microservices-gcp-ticketing
 build:
-  # local:
-  #   push: false
-  googleCloudBuild:
-    projectId: sg-k8s-testing
+  local:
+    push: false
+  # googleCloudBuild:
+  #   projectId: sg-k8s-testing
   artifacts:
-    - image: us.gcr.io/sg-k8s-testing/auth
+    - image: arrigolupori/auth
+    # us.gcr.io/sg-k8s-testing/auth
       context: auth
       docker:
         dockerfile: Dockerfile

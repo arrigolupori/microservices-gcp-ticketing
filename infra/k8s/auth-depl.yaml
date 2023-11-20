@@ -14,7 +14,8 @@ spec:
     spec:
       containers:
         - name: auth
-          image: us.gcr.io/sg-k8s-testing/auth
+          image: arrigolupori/auth
+          # us.gcr.io/sg-k8s-testing/auth
 ---
 apiVersion: v1
 kind: Service
