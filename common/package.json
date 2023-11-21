@@ -2,9 +2,22 @@
   "name": "@sagewillcom/common",
   "version": "0.0.1",
   "description": "Common utilities across Sagewill services.",
-  "main": "index.js",
+  "main": "./build/main.js",
+  "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
+    "init": "tsc --init",
+    "clean": "del ./build/*",
+    "build": "npm run clean && tsc"
   },
   "author": "Sagewill LLC",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "del-cli": "^5.1.0"
+  }
 }
