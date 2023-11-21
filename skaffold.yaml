@@ -26,6 +26,15 @@ build:
         manual:
           - src: "**/*.{js,jsx}"
             dest: .
+    - image: arrigolupori/tickets
+      # us.gcr.io/sg-k8s-testing/tickets
+      context: tickets
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
 manifests:
   rawYaml:
     - ./infra/k8s/*
