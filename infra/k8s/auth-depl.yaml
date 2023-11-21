@@ -15,6 +15,12 @@ spec:
       containers:
         - name: auth
           image: arrigolupori/auth
+          env:
+            - name: JWT_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: jwt-secret
+                  key: JWT_KEY
           # us.gcr.io/sg-k8s-testing/auth
 ---
 apiVersion: v1
