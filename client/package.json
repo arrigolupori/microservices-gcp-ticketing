@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "next"
+  },
   "author": "Sagewill LLC",
   "dependencies": {
     "next": "^14.0.3",
