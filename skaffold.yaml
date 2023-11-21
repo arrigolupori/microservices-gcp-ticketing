@@ -9,13 +9,22 @@ build:
   #   projectId: sg-k8s-testing
   artifacts:
     - image: arrigolupori/auth
-    # us.gcr.io/sg-k8s-testing/auth
+      # us.gcr.io/sg-k8s-testing/auth
       context: auth
       docker:
         dockerfile: Dockerfile
       sync:
         manual:
-          - src: 'src/**/*.ts'
+          - src: "src/**/*.ts"
+            dest: .
+    - image: arrigolupori/client
+      # us.gcr.io/sg-k8s-testing/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.{js,jsx}"
             dest: .
 manifests:
   rawYaml:
