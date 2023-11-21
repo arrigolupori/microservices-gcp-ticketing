@@ -1,0 +1,10 @@
+{
+  "name": "@sagewillcom/common",
+  "version": "0.0.1",
+  "description": "Common utilities across Sagewill services.",
+  "main": "index.js",
+  "scripts": {
+  },
+  "author": "Sagewill LLC",
+  "license": "ISC"
+}
