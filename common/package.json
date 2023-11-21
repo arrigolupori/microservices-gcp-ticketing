@@ -2,7 +2,7 @@
   "name": "@sagewillcom/common",
   "version": "0.0.4",
   "description": "Common utilities across Sagewill services.",
-  "main": "./build/main.js",
+  "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "files": [
     "build/**/*"
