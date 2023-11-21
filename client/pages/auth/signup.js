@@ -2,10 +2,9 @@ import { useState, useEffect } from "react";
 import Router from "next/router";
 import useRequest from "../../hooks/use-request";
 
-export const Signup = () => {
+export default () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const { doRequest, errors } = useRequest({
     url: "/api/users/signup",
     method: "post",
@@ -13,6 +12,7 @@ export const Signup = () => {
       email,
       password,
     },
+    onSuccess: () => Router.push("/"),
   });
 
   const onSubmit = async (event) => {
@@ -46,5 +46,3 @@ export const Signup = () => {
     </form>
   );
 };
-
-export default Signup;
