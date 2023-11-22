@@ -17,15 +17,6 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
-    - image: arrigolupori/client
-      # us.gcr.io/sg-k8s-testing/client
-      context: client
-      docker:
-        dockerfile: Dockerfile
-      sync:
-        manual:
-          - src: "**/*.{js,jsx}"
-            dest: .
     - image: arrigolupori/tickets
       # us.gcr.io/sg-k8s-testing/tickets
       context: tickets
@@ -34,6 +25,15 @@ build:
       sync:
         manual:
           - src: "src/**/*.ts"
+            dest: .
+    - image: arrigolupori/client
+      # us.gcr.io/sg-k8s-testing/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "**/*.{js,jsx}"
             dest: .
 manifests:
   rawYaml:
