@@ -1,6 +1,6 @@
 {
   "name": "@sagewillcom/common",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "Common utilities across Sagewill services.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
