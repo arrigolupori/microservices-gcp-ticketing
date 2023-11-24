@@ -26,6 +26,15 @@ build:
         manual:
           - src: "src/**/*.ts"
             dest: .
+    - image: arrigolupori/orders
+      # us.gcr.io/sg-k8s-testing/orders
+      context: orders
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: "src/**/*.ts"
+            dest: .
     - image: arrigolupori/client
       # us.gcr.io/sg-k8s-testing/client
       context: client
