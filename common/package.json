@@ -1,6 +1,6 @@
 {
   "name": "@sagewillcom/common",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Common utilities across Sagewill services.",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -20,6 +20,7 @@
     "typescript": "^5.3.2"
   },
   "dependencies": {
+    "@sagewillcom/common": "^0.0.13",
     "@types/cookie-session": "^2.0.48",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",

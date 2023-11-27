@@ -4,6 +4,6 @@
   "author": "Sagewill LLC",
   "description": "Microservices architecture for ticketing app.",
   "scripts": {
-    "modules": "cd auth && npm i && cd ../client && npm i && cd ../common && npm i && cd ../orders && npm i && cd ../tickets && npm i && cd .. && echo \"Done re-installing node modules.\""
+    "common": "cd auth && npm i @sagewillcom/common@latest && cd ../client && npm i @sagewillcom/common@latest && cd ../common && npm i @sagewillcom/common@latest && cd ../orders && npm i @sagewillcom/common@latest && cd ../tickets && npm i @sagewillcom/common@latest && cd .. && echo \"Done re-installing node modules.\""
   }
 }
